@@ -1,0 +1,19 @@
+body {
+background: #D8D8D8;
+width: 100%;
+}
+
+img {
+height: 400px;
+}
+
+#container {
+border: none;
+}
+
+.galeria {
+background: white;
+height: 500px;
+display: inline-block;
+padding: 20px;
+}

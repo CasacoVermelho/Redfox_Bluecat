@@ -4,40 +4,47 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Red fox</title>
-	<style type="text/css">
-		body {
-			background: #D8D8D8;
-			width: 1200px;
-		}
-
-		img {
-			height: 400px;
-		}
-
-		#container {
-			border: none;
-		}
-
-		.galeria {
-			background: white;
-			height: 500px;
-			display: inline-block;
-			padding: 20px;
-		}
-
-
-	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 	<div id="container">
-		<div class="galeria">
-			<h1>This is what I wanted to be doing right now!</h1>
-			<img src="img/red1.png">
-		</div>
-		<div class="galeria">
-			<h1>Look how cute u are!</h1>
-			<img src="img/red2.png">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+			</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="kissing-tab" data-bs-toggle="tab" data-bs-target="#kissing-tab-pane" type="button" role="tab" aria-controls="kissing-tab-pane" aria-selected="false">Kissing</button>
+		  	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="cute-tab" data-bs-toggle="tab" data-bs-target="#cute-tab-pane" type="button" role="tab" aria-controls="cute-tab-pane" aria-selected="false">Cute Fox</button>
+		  	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="love-tab" data-bs-toggle="tab" data-bs-target="#love-tab-pane" type="button" role="tab" aria-controls="love-tab-pane" aria-selected="false">DIS IS U</button>
+		  	</li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Hello my love: Passe as abas.</div>
+			<div class="tab-pane fade" id="kissing-tab-pane" role="tabpanel" aria-labelledby="kissing-tab" tabindex="0">
+				<div class="galeria">
+					<h1>This is what I wanted to be doing right now!</h1>
+					<img src="img/red1.png">
+				</div>
+			</div>
+			<div class="tab-pane fade" id="cute-tab-pane" role="tabpanel" aria-labelledby="cute-tab" tabindex="0">
+				<div class="galeria">
+					<h1>Look how cute u are!</h1>
+					<img src="img/red2.png">
+				</div>
+			</div>
+			<div class="tab-pane fade" id="love-tab-pane" role="tabpanel" aria-labelledby="love-tab" tabindex="0">
+				<div class="galeria">
+					<h1>And this is how cute you are</h1>
+					<img src="img/Samoyed.webp">
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
